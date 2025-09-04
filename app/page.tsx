@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './page.module.scss';
 import { getProducts } from '@/lib/api';
 import { getUserFromCookies } from '@/lib/auth';

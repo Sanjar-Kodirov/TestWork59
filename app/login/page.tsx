@@ -39,6 +39,7 @@ export default function LoginPage() {
       const data = await res.json();
       setUser(data.user);
       router.replace('/');
+      router.refresh();
     } catch (err: any) {
       setError(err.message || 'Ошибка авторизации');
     } finally {
