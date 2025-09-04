@@ -10,16 +10,17 @@
 .thumb {
   position: relative;
   width: 100%;
-  padding-top: 65%;
   img {
     object-fit: cover;
   }
+  aspect-ratio: 1;
 }
 
 .body {
   padding: 12px;
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .top {
@@ -42,8 +43,13 @@
 .meta {
   color: var(--muted);
   font-size: 12px;
+  margin-bottom: 8px;
 }
 
 .cartBtn {
   width: 100%;
+}
+
+.bottom {
+  margin-top: auto;
 }

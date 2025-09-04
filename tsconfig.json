@@ -21,6 +21,9 @@
       "@/components/*": [
         "components/*"
       ],
+      "@/app/*": [
+        "app/*"
+      ],
       "@/lib/*": [
         "lib/*"
       ],
