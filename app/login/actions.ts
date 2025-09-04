@@ -21,19 +21,14 @@ export async function loginAction(formData: FormData): Promise<void> {
 
   try {
     const { user, token } = await login(username, password);
+    if (!token) {
+      throw new Error('Token missing in login response');
+    }
 
     const store = cookies();
 
     store.set('token', token, {
       httpOnly: true,
-      sameSite: 'lax',
-      secure: process.env.NODE_ENV === 'production',
-      path: '/',
-      maxAge: 60 * 60 * 24 * 7,
-    });
-
-    store.set('user', JSON.stringify(user), {
-      httpOnly: false,
       sameSite: 'lax',
       secure: process.env.NODE_ENV === 'production',
       path: '/',

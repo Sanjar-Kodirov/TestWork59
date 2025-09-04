@@ -15,7 +15,22 @@ export async function login(username: string, password: string) {
     lastName: data.lastName,
     email: data.email,
   };
-  return { user, token: data.accessToken };
+  const token = (data as any).token ?? (data as any).accessToken;
+  return { user, token };
+}
+
+export async function getMe(token: string): Promise<User> {
+  const { data } = await api.get<LoginResponse>('/auth/me', {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  const user: User = {
+    id: data.id,
+    username: data.username,
+    firstName: data.firstName,
+    lastName: data.lastName,
+    email: data.email,
+  };
+  return user;
 }
 
 export async function getProducts(params: { limit: number }) {

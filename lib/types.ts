@@ -60,8 +60,8 @@ export type User = {
 };
 
 export type LoginResponse = {
-  accessToken: string;
-  refreshToken: string;
+  accessToken?: string;
+  refreshToken?: string;
   id: number;
   username: string;
   email: string;

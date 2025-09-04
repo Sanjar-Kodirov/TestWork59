@@ -15,9 +15,9 @@ export default async function Header() {
         <nav>
           {user ? (
             <div className={styles.userBlock}>
-              <span>
+              <Link href="/account">
                 {user.firstName} {user.lastName}
-              </span>
+              </Link>
               <form action={logoutAction}>
                 <LogoutButton />
               </form>
