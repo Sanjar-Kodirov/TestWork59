@@ -1,0 +1,48 @@
+:root {
+  --bg: #0b0c10;
+  --fg: #ffffff;
+  --muted: #c5c6c7;
+  --primary: #66fcf1;
+  --secondary: #45a29e;
+  --card: #1f2833;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+main {
+  min-height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+button {
+  background: var(--primary);
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input {
+  background: #11151a;
+  color: var(--fg);
+  border: 1px solid #2b2f36;
+  padding: 10px 12px;
+  border-radius: 6px;
+}

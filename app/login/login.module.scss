@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.form {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  display: grid;
+  gap: 12px;
+
+  h1 {
+    margin: 0 0 8px;
+  }
+
+  label {
+    display: grid;
+    gap: 6px;
+  }
+
+  .error {
+    color: #ff8787;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "TestWork59",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && stylelint \"**/*.{css,scss}\"",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.4",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.6",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "typescript": "^5.5.4"
+  }
+}
